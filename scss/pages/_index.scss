@@ -1,0 +1,79 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.animacion-flotar {
+    filter: drop-shadow(15px 15px 20px rgba(0, 0, 0, 0.4)) !important;
+    @include animacion-flotar;
+}
+
+.contenedor-carrusel {
+    background-color: $color-logo; 
+    border: 2px solid #eeeeee;
+    border-radius: 20px;
+    padding: 2rem !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin: 2rem auto;
+    max-width: 95% !important;
+    height: auto !important; 
+    // min-height: 500px !important;
+    overflow: hidden;
+
+    @include breakpoint('desktop') {
+        max-width: 80% !important; 
+        min-height: 600px;
+    }
+
+    .carousel-inner {
+        padding-bottom: 50px; 
+    }
+
+    .carousel-item {
+        text-align: center;
+        
+        
+        img.img-fluid { 
+            height: 240px !important; 
+            width: auto !important; 
+            object-fit: contain !important;
+            margin: 0 auto 2rem auto !important; 
+            display: block !important;
+
+            @include breakpoint('desktop') {
+                height: 350px !important; 
+            }
+        }
+    }
+
+    /* Ajuste de Textos */
+    .carousel-caption {
+      
+        position: relative !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        margin-top: 1rem;
+        color: white;
+
+        h5 {
+            color: $color-acento !important; 
+            font-weight: bold;
+            font-size: 1.5rem !important;
+            margin-bottom: 0.5rem !important;
+
+            @include breakpoint('desktop') {
+                font-size: 2rem !important;
+            }
+        }
+
+        p {
+            font-size: 1rem !important;
+            max-width: 80%;
+            margin: 0 auto !important;
+        }
+    }
+
+    /* Puntos de navegación */
+    .carousel-indicators {
+        bottom: -10px !important;
+    }
+}

@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+// Eliminar márgenes y rellenos predeterminados del navegador
+body {
+
+    margin: 0;
+    padding: 0;
+}
+
+//Limpieza de puntos y números en listas
+ul, ol {
+    list-style: none;
+}
+
+// Eliminar subrayado y color predeterminados de los enlaces
+a{
+    text-decoration: none;
+    color: inherit;
+}

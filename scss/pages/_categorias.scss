@@ -1,0 +1,36 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.card-sticker {
+    
+    @include transicion-estandar;
+    
+    .card-body {
+        h2 {
+            color: $color-logo;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+    }
+
+    &:hover {
+        h2 {
+            color: darken($color-logo, 15%); 
+        }
+        
+       
+        img {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+    }
+    
+    
+    .bg-light {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        height: 250px; 
+    }
+}

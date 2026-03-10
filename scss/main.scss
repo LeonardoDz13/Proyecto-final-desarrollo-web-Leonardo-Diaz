@@ -1,0 +1,22 @@
+
+// Herramientas 
+@use 'utilities/variables';
+@use 'utilities/mixins';
+
+// Base
+@use 'base/reset';
+@use 'base/base';
+
+
+// Componentes
+@use 'componentes/cards';
+@use 'componentes/buttons';
+@use 'componentes/header';
+
+// Paginas
+@use 'pages/index';
+@use 'pages/carrito';
+@use 'pages/categorias';
+@use 'pages/stickers';
+@use 'pages/preguntas_frecuentes';
+

@@ -1,0 +1,22 @@
+
+@use '../utilities/variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Estilo general para el body */
+body {
+    background-color: $color-fondo;
+    color: $color-texto;
+    font-family: $fuente-principal;
+    font-size: 1.1rem;
+}
+
+.tipografiaNunito {
+    font-family: $fuente-principal,sans-serif!important;
+}
+
+main.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
